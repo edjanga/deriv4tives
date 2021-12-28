@@ -1,4 +1,4 @@
-# deriv4tives
+# deriv4tives.com
 Website explaining the basics of derivatives.<br/>
 Technologies used:<br/>
    -HTML<br/>
