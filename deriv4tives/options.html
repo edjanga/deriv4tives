@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The world of derivatives made easy!">
+    <meta name="author" content="Emmanuel Djanga">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="css/laptop.css?version=123">
+    <link rel="stylesheet" media="(min-width: 700px) and (max-width: 768px)" type="text/css" href="css/tablet.css?version=123">
+    <link rel="stylesheet" media="(max-width: 699px)" type="text/css" href="css/phone.css?version=123">
+    <link rel="stylesheet" media="(max-width: 699px)" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="(min-width: 700px)" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="(min-width: 769px)" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Deriv4tives</title>
+</head>
+<body>
+<header>
+    <h1><a href="index.html" target="_blank">Deriv4tives</a></h1>
+    <p class="page_description">The basics of derivatives ... </p>
+    <p class="bottom_description"> demystified!</p>
+</header>
+<nav>
+    <ul class="nav_bar">
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="delta_one.html" target="_blank">Delta One</a></li>
+        <li><a href="options.html" target="_blank">Options</a></li>
+<!--        <li><a href="greeks.html" target="_blank">Greeks</a></li>-->
+<!--        <li><a href="pricing.html" target="_blank">Options Pricing</a></li>-->
+        <li><a href="trading_strats.html" target="_blank">Trading Strategies</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="def_box">
+        <h2>Definition</h2>
+        <p>Contract that gives one the right to either buy or sell an <span class="term_defined"><a href="delta_one.html" target="_blank">underlying</a></span>
+            asset at a predefined price in the future.<br/>
+            There exist two types of options: call and put.
+        </p>
+    </div>
+    <br/>
+    <!-- Creation of two columns: one article per product on the left-->
+    <!-- Glossary and list of products on the right-->
+    <div class="grid_container">
+        <div class="grid_item_left">
+             <h6 class="box_header">Glossary</h6>
+                <ul class="glossary">
+                    <li><i>Exercise an option</i></li>
+                        <br/>
+                        Action of applying an option.
+                    <br/><br/><br/>
+                    <li><i>Call option</i></li>
+                        <br/>
+                        Option that allows one to buy an <span class="term_defined"><a href="delta_one.html" target="_blank">underlying</a></span> for a predetermined price in the future.
+                    <br/><br/><br/>
+                    <li><i>Put option</i></li>
+                        <br/>
+                        Option that allows one to sell an <span class="term_defined"><a href="delta_one.html" target="_blank">underlying</a></span> for a predetermined price in the future.
+                        <br/><br/><br/>
+                    <li><i>Writer</i></li>
+                        <br/>
+                        Individual that has the obligation to sell or buy an <span class="term_defined"><a href="delta_one.html" target="_blank">underlying</a></span> the option is written on if the option is exercised.
+                        <br/><br/>
+                </ul>
+             <h6 class="box_header">Product</h6>
+                <ul class="product_list">
+                    <li>European options</li>
+                    <li>American options</li>
+                </ul>
+         </div>
+         <div class="sub_grid_container_options">
+             <div class="grid_item_right_options">
+                 <!-- <a href="html/options/american.html">European options</a> -->
+                 <h6 class="box_header">European options</h6>
+                 <p>Options that one can exercise only at an agreed date called maturity date.</p>
+                    <div class="payoff_card">
+                        <img src="img/payoff/call_option_long.png" style="width: 90%; height: 40%"/>
+                        <figcaption style="font-size: 10px">European call payoff profile.</figcaption>
+                    </div>
+                    <div class="payoff_card">
+                        <img src="img/payoff/put_option_long.png" style="width: 90%; height: 40%"/>
+                        <figcaption style="font-size: 10px">European put payoff profile.</figcaption>
+                    </div>
+             </div>
+             <div class="grid_item_right_options">
+                 <!-- <a href="html/options/american.html">American options</a> -->
+                 <h6 class="box_header">American options</h6>
+                 <p>Options that one can exercise at any time before an agreed date called maturity date.</p>
+                    <div class="payoff_card">
+                        <img src="img/payoff/call_option_long.png" style="width: 90%; height: 40%"/>
+                        <figcaption style="font-size: 10px">American call payoff profile.</figcaption>
+                    </div>
+                    <div class="payoff_card">
+                        <img src="img/payoff/put_option_long.png" style="width: 90%; height: 40%"/>
+                        <figcaption style="font-size: 10px">American put payoff profile.</figcaption>
+                    </div>
+             </div>
+         </div>
+    </div>
+</main>
+<br/>
+<footer>
+    <div class="footer_class">
+    <ul>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="https://twitter.com/emmanuel_djanga"><i class="fa fa-twitter" style="font-size: 24px; padding-right: 8px"></i></a></li>
+        <li><a href="mailto:emmanuel.djanga@live.be"><i class="fa fa-envelope" style="font-size: 24px;"></i></a></li>
+    </ul>
+    </div>
+</footer>
+</body>
+</html>

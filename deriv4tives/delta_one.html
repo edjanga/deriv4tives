@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The world of derivatives made easy!">
+    <meta name="author" content="Emmanuel Djanga">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+    <!-- CSS stylesheets depending on the size of the device -->
+    <link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="css/laptop.css?version=123">
+    <link rel="stylesheet" media="(min-width: 700px) and (max-width: 768px)" type="text/css" href="css/tablet.css?version=123">
+    <link rel="stylesheet" media="(max-width: 699px)" type="text/css" href="css/phone.css?version=123">
+    <link rel="stylesheet" media="(max-width: 699px)" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="(min-width: 700px)" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="(min-width: 769px)" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Deriv4tives</title>
+</head>
+<body>
+<header>
+    <h1><a href="index.html" target="_blank">Deriv4tives</a></h1>
+    <p class="page_description">The basics of derivatives ... </p>
+    <p class="bottom_description"> demystified!</p>
+</header>
+<nav>
+    <ul class="nav_bar">
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="delta_one.html" target="_blank">Delta One</a></li>
+        <li><a href="options.html" target="_blank">Options</a></li>
+<!--        <li><a href="greeks.html" target="_blank">Greeks</a></li>-->
+<!--        <li><a href="pricing.html" target="_blank">Options Pricing</a></li>-->
+        <li><a href="trading_strats.html" target="_blank">Trading Strategies</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="def_box">
+        <h2>Delta one</h2>
+        <p>Financial instruments whose value is <i>linearly
+            impacted </i><sup>*</sup> by any price movement of the <i>underlying</i> <sup>*</sup>.
+            </p>
+    </div>
+    <br/>
+    <div class="grid_container">
+         <div class="grid_item_left">
+             <h6 class="box_header">Glossary</h6>
+                <ul class="glossary">
+                    <li><i>Linear impact</i></li>
+                        <br/>
+                        Term describing a proportional variation in one quantity.
+                    <br/><br/><br/>
+                    <li><i>Underlying</i></li>
+                        <br/>
+                        Asset used to compute a derivative value.
+                        <br/><br/><br/>
+                </ul>
+             <h6 class="box_header">Product</h6>
+                <ul class="product_list">
+                    <li>Futures</li>
+                    <li>Forwards</li>
+<!--                    <li>Forward Rate Agreement (FRAs)</li>-->
+                </ul>
+         </div>
+         <div class="sub_grid_container_delta_one">
+             <div class="grid_item_right_delta_one">
+                 <!-- <a href="html/delta_one/futures.html">Futures</a> -->
+                 <h6 class="box_header">Futures</h6>
+                 <div class="product_card">
+                     <div class="payoff_card">
+                        <img src="img/payoff/futures_long.png" style="width: 90%; height: 40%"/>
+                     </div>
+                     <ul class="overview_product">
+                         <li>Agreement to buy or sell an underlying at a predefined price at some point in the future.</li>
+                         <br/>
+                         <li>Standarised, i.e. traded on exchanges.</li>
+                         <br/>
+                         <li>Contract size indicates the amount of the underlying that has to be delivered.</li>
+                         <br/>
+                         <li>Strike at 95.</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="grid_item_right_delta_one">
+                 <!-- <a href="html/delta_one/forwards.html">Forwards</a> -->
+                 <h6 class="box_header">Forwards</h6>
+                 <div class="product_card">
+                     <div class="payoff_card">
+                        <img src="img/payoff/futures_long.png" style="width: 90%; height: 40%"/>
+                     </div>
+                     <ul class="overview_product">
+                         <li>Agreement to buy or sell an underlying at a predefined price at some point in the future.</li>
+                         <br/>
+                         <li>Bespoke contract agreed on by both sides.</li>
+                         <br/>
+                         <li>Traded over-the-counter (OTC).</li>
+                         <br/>
+                         <li>Strike at 95.</li>
+                     </ul>
+                 </div>
+             </div>
+<!--             <div class="grid_item_right_delta_one"><h6 class="box_header"><a href="html/delta_one/fras.html">FRAs</a></h6></div>-->
+
+         </div>
+    </div>
+</main>
+<br/>
+<footer>
+    <div class="footer_class">
+    <ul>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="https://twitter.com/emmanuel_djanga"><i class="fa fa-twitter" style="font-size: 24px; padding-right: 8px"></i></a></li>
+        <li><a href="mailto:emmanuel.djanga@live.be"><i class="fa fa-envelope" style="font-size: 24px;"></i></a></li>
+    </ul>
+    </div>
+</footer>
+</body>
+</html>

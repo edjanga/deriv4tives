@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The world of derivatives made easy!">
+    <meta name="author" content="Emmanuel Djanga">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+    <!-- CSS stylesheets depending on the size of the device -->
+    <link rel="stylesheet" media="screen and (min-width: 769px)" type="text/css" href="css/laptop.css?version=123">
+    <link rel="stylesheet" media="(min-width: 700px) and (max-width: 768px)" type="text/css" href="css/tablet.css?version=123">
+    <link rel="stylesheet" media="(max-width: 699px)" type="text/css" href="css/phone.css?version=123">
+    <link rel="stylesheet" media="(max-width: 699px)" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="(min-width: 700px)" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="(min-width: 769px)" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Deriv4tives</title>
+</head>
+<body>
+<header>
+    <h1><a href="index.html" target="_blank">Deriv4tives</a></h1>
+    <p class="page_description">The basics of derivatives ... </p>
+    <p class="bottom_description"> demystified!</p>
+</header>
+<nav>
+    <ul class="nav_bar">
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="delta_one.html" target="_blank">Delta One</a></li>
+        <li><a href="options.html" target="_blank">Options</a></li>
+<!--        <li><a href="greeks.html" target="_blank">Greeks</a></li>-->
+<!--        <li><a href="pricing.html" target="_blank">Options Pricing</a></li>-->
+        <li><a href="trading_strats.html" target="_blank">Trading Strategies</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="def_box">
+        <h2>Definition</h2>
+        <p>Holding of different derivatives in one portfolio.</p>
+    </div>
+    <br/>
+    <!-- Creation of five columns: one per strat-->
+    <div class="grid_container_product">
+        <div class="trading_strategies_box">
+            <div class="grid_item_right_trading_strategies">
+                <!-- <a href="html/trading_strategies/put-call.html">Put-Call parity</a> -->
+                <h6 class="box_header">Put-Call parity</h6>
+                <div class="payoff_card">
+                    <img src="img/payoff/put_call_parity_payoff.png" style="width: 90%; height: 40%"/>
+                    <figcaption style="font-size: 10px">Put-Call payoff profile.</figcaption>
+                </div>
+                <br>
+                <ul style="text-align: left">
+                    <li>Long: 1 call with strike K (95).</li>
+                    <li>Short: 1 put with strike K (95).</li>
+                    <li>Same payoff as futures contract with the same strike.</li>
+                </ul>
+                <div class="payoff_card">
+                    <img src="img/structure/put_call_parity_structure.png" style="width: 90%; height: 40%"/>
+                    <figcaption style="font-size: 10px">Put-Call parity composition.</figcaption>
+                </div>
+            </div>
+<!--            <div class="grid_item_right_trading_strategies"><h6 class="box_header"><a href="html/trading_strategies/spreads.html">Spreads</a></h6></div>-->
+            <div class="grid_item_right_trading_strategies">
+                <!-- <a href="html/trading_strategies/put-call.html">Straddle</a> -->
+                <h6 class="box_header">Straddle</h6>
+                <div class="payoff_card">
+                    <img src="img/payoff/straddle_payoff.png" style="width: 90%; height: 40%"/>
+                    <figcaption style="font-size: 10px">Payoff profile of straddle.</figcaption>
+                </div>
+                <br>
+                <ul style="text-align: left">
+                    <li>Long: 1 call with strike K (100).</li>
+                    <li>Long: 1 put with strike K (100).</li>
+                    <li>Long volatility strategy, i.e. portfolio benefits from large market movements in both
+                        directions.</li>
+                </ul>
+                <div class="payoff_card">
+                    <img src="img/structure/straddle_structure.png" style="width: 90%; height: 40%"/>
+                    <figcaption style="font-size: 10px">Straddle composition.</figcaption>
+                </div>
+            </div>
+            <div class="grid_item_right_trading_strategies">
+                <!-- <a href="html/trading_strategies/put-call.html">Strangle</a> -->
+                <h6 class="box_header">Strangle</h6>
+                <div class="payoff_card">
+                    <img src="img/payoff/strangle_payoff.png" style="width: 90%; height: 40%"/>
+                    <figcaption style="font-size: 10px">Strangle payoff profile.</figcaption>
+                </div>
+                <ul style="text-align: left">
+                    <li>Long: 1 call with strike K1 (110).</li>
+                    <li>Long: 1 put with strike K2 (95) such that K1 > K2.</li>
+                    <li>Long volatility strategy.</li>
+                </ul>
+                <div class="payoff_card">
+                    <img src="img/structure/strangle_structure.png" style="width: 90%; height: 40%"/>
+                    <figcaption style="font-size: 10px">Strangle composition.</figcaption>
+                </div>
+            </div>
+            <div class="grid_item_right_trading_strategies">
+                <!-- <a href="html/trading_strategies/put-call.html">Strangle</a> -->
+                <h6 class="box_header">Strip</h6>
+                <div class="payoff_card">
+                    <img src="img/payoff/strip_payoff.png" style="width: 90%; height: 40%"/>
+                    <figcaption style="font-size: 10px">Strip payoff profile.</figcaption>
+                </div>
+                <ul style="text-align: left">
+                    <li>Long: 1 call with strike K (95).</li>
+                    <li>Long: 2 puts with strike K (95).</li>
+                    <li>Long volatility strategy.</li>
+                </ul>
+                <div class="payoff_card">
+                    <img src="img/structure/strip_structure.png" style="width: 90%; height: 40%"/>
+                    <figcaption style="font-size: 10px">Strip composition.</figcaption>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<br/>
+<footer>
+    <div class="footer_class">
+    <ul>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="https://twitter.com/emmanuel_djanga"><i class="fa fa-twitter" style="font-size: 24px; padding-right: 8px"></i></a></li>
+        <li><a href="mailto:emmanuel.djanga@live.be"><i class="fa fa-envelope" style="font-size: 24px;"></i></a></li>
+    </ul>
+    </div>
+</footer>
+</body>
+</html>
